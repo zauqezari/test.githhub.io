@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-  body {
+    * {
+      box-sizing: border-box;
+    }
+    body {
       margin: 0;
       font-family: Georgia, serif;
       background-color: white;
@@ -17,6 +20,7 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      overflow: hidden; /* Prevent scrollbars */
     }
     .option-container {
       display: flex;
@@ -39,8 +43,6 @@
       color: whitesmoke;
       border: 2px solid rgb(73, 12, 12);
       font-size: 5vw;
-      font-size: 16px;
-      font-size: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -54,9 +56,9 @@
     }
     @media (max-width: 600px) {
       .option-box {
-        width: 40vw;
-        height: 40vw;
-        font-size: 7vw;
+        width: 50vw; /* Adjust to a bigger size */
+        height: 50vw;
+        font-size: 6vw; /* Make the text responsive */
       }
     }
   </style>
