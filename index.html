@@ -20,7 +20,6 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      overflow: hidden; /* Prevent scrollbars */
     }
     .option-container {
       display: flex;
@@ -28,7 +27,9 @@
       align-items: center;
       justify-content: center;
       gap: 40px;
-      margin-bottom: 60px;
+      position: absolute;
+      bottom: 10vh; /* Adjusted to keep space from the bottom */
+      width: 100%; /* Ensure it's full width */
       padding: 0 20px;
     }
     .option-box {
@@ -43,6 +44,7 @@
       color: whitesmoke;
       border: 2px solid rgb(73, 12, 12);
       font-size: 5vw;
+      font-size: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -56,9 +58,12 @@
     }
     @media (max-width: 600px) {
       .option-box {
-        width: 50vw; /* Adjust to a bigger size */
-        height: 50vw;
-        font-size: 6vw; /* Make the text responsive */
+        width: 45vw; /* Adjust width to be more appropriate for smaller screens */
+        height: 45vw;
+        font-size: 7vw; /* Increase font size for readability */
+      }
+      .option-container {
+        bottom: 20vh; /* More spacing from the bottom */
       }
     }
   </style>
