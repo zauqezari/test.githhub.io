@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zauq-e-Zari Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-image: url('bg2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #f9f6f1;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
+      line-height: 1.3;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 16px;
+      padding: 10px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .item img {
+      width: 280px;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .social-icons {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+
+    .social-icons img {
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 14px;
+      }
+
+      .item img {
+        width: 220px;
+        height: 300px;
+      }
+
+      .carousel {
+        gap: 12px;
+        padding: 5px;
+      }
+
+      .social-icons {
+        flex-direction: row;
+        bottom: 10px;
+        right: 10px;
+        gap: 8px;
+      }
+
+      .social-icons img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>CUSTOM EMBROIDERY<br>REPLICAS / YOUR OWN DESIGN</h1>
+  <h2>DESIGN WITH ZAUQ-E-ZARI</h2>
+
+  <div class="carousel">
+    <div class="item"><img src="embroidery.jpg" alt="Custom 1"></div>
+    <div class="item"><img src="embroidery2.jpg" alt="Custom 2"></div>
+    <div class="item"><img src="embroidery4.JPG" alt="Custom 3"></div>
+    <div class="item"><img src="embroidery5.JPG" alt="Custom 4"></div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://wa.me/923001234567" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <a href="https://instagram.com/zauqezari" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+  </div>
+</body>
+</html>
