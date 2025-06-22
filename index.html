@@ -18,52 +18,44 @@
       background-attachment: fixed;
       height: 100vh;
       display: flex;
-      align-items: flex-end;
       justify-content: center;
+      align-items: center;
+      overflow: hidden; /* Prevents unnecessary scrollbars */
     }
     .option-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 40px;
-      position: absolute;
-      bottom: 10vh; /* Adjusted to keep space from the bottom */
-      width: 100%; /* Ensure it's full width */
-      padding: 0 20px;
+      gap: 20px;
+      text-align: center;
     }
     .option-box {
       width: 25vw;
       max-width: 140px;
-      min-width: 100px;
       height: 25vw;
       max-height: 140px;
-      min-height: 100px;
       border-radius: 50%;
       background-color: rgb(73, 12, 12);
       color: whitesmoke;
       border: 2px solid rgb(73, 12, 12);
-      font-size: 5vw;
-      font-size: 16px;
+      font-size: 3vw;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      text-align: center;
       transition: transform 0.3s ease, background-color 0.3s ease;
     }
     .option-box:hover {
       transform: scale(1.05);
       background-color: rgba(255, 255, 255, 0.2);
     }
+    /* Responsive media queries for small screens */
     @media (max-width: 600px) {
       .option-box {
-        width: 45vw; /* Adjust width to be more appropriate for smaller screens */
-        height: 45vw;
-        font-size: 7vw; /* Increase font size for readability */
-      }
-      .option-container {
-        bottom: 20vh; /* More spacing from the bottom */
+        width: 50vw; /* Bigger buttons on small screens */
+        height: 50vw;
+        font-size: 6vw; /* Larger text on small screens */
       }
     }
   </style>
