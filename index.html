@@ -12,7 +12,7 @@
       font-family: Georgia, serif;
       background-color: white;
       background-image: url('main.jpg');
-      background-size: contain; /* Ensure the image covers the entire viewport */
+      background-size:contain; /* Ensure the image covers the entire viewport */
       background-position: center; /* Center the background image */
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -28,24 +28,22 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
-      text-align: center;
-      position: absolute;
-      bottom: 10vh;
+      text-align: center ;
+      position: absolute; 
+      bottom: 1vh;
       width: 60%;
       padding: 0 20px;
     }
     .option-box {
       width: 15vw;
-      height: 15vw;
       max-width: 140px;
+      height: 15vw;
       max-height: 140px;
-      min-width: 100px; /* Prevent shrinking too much */
-      min-height: 100px;
       border-radius: 50%;
       background-color: rgb(73, 12, 12);
       color: whitesmoke;
       border: 2px solid rgb(73, 12, 12);
-      font-size: 20px; /* Fixed font-size */
+      font-size: 3vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -58,9 +56,9 @@
     }
     @media (max-width: 600px) {
       .option-box {
-        width: 40vw;
-        height: 40vw;
-        font-size: 18px; /* Smaller font size for smaller screens */
+        width: 50vw;
+        height: 50vw;
+        font-size: 6vw; /* Slightly bigger font on small screens */
       }
       .option-container {
         bottom: 15vh; /* Less space at the bottom on smaller screens */
