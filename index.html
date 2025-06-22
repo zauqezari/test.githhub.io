@@ -12,15 +12,15 @@
       font-family: Georgia, serif;
       background-color: white;
       background-image: url('main.jpg');
-      background-size: 50%;
-      background-position: right;
+      background-size: cover; /* Ensure the image covers the entire viewport */
+      background-position: center; /* Center the background image */
       background-repeat: no-repeat;
       background-attachment: fixed;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden; /* Prevents unnecessary scrollbars */
+      overflow: hidden;
     }
     .option-container {
       display: flex;
@@ -29,6 +29,10 @@
       justify-content: center;
       gap: 20px;
       text-align: center;
+      position: absolute;
+      bottom: 20vh; /* Adjust the buttons' vertical positioning */
+      width: 100%;
+      padding: 0 20px;
     }
     .option-box {
       width: 25vw;
@@ -39,7 +43,7 @@
       background-color: rgb(73, 12, 12);
       color: whitesmoke;
       border: 2px solid rgb(73, 12, 12);
-      font-size: 3vw;
+      font-size: 5vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -50,12 +54,14 @@
       transform: scale(1.05);
       background-color: rgba(255, 255, 255, 0.2);
     }
-    /* Responsive media queries for small screens */
     @media (max-width: 600px) {
       .option-box {
-        width: 50vw; /* Bigger buttons on small screens */
+        width: 50vw;
         height: 50vw;
-        font-size: 6vw; /* Larger text on small screens */
+        font-size: 6vw; /* Slightly bigger font on small screens */
+      }
+      .option-container {
+        bottom: 15vh; /* Less space at the bottom on smaller screens */
       }
     }
   </style>
